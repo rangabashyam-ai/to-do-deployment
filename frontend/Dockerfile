@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the app for production
-RUN npm run build
+#RUN npm run build
 
 # Install serve to serve the build
 RUN npm install -g serve
