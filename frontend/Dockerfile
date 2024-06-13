@@ -1,5 +1,5 @@
 # Use an official Node runtime as a parent image
-FROM node:14
+FROM node:14 AS build
 
 # Set the working directory
 WORKDIR /app
@@ -14,13 +14,23 @@ RUN npm install
 COPY . .
 
 # Build the app for production
-#RUN npm run build
+RUN npm run build
 
-# Install serve to serve the build
-RUN npm install -g serve
+FROM nginx:alpine
 
-# Expose the port the app runs on
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
+
+# Remove default Nginx configuration file
+RUN rm /etc/nginx/conf.d/default.conf
+
+# Add a custom Nginx configuration file
+COPY nginx.conf /etc/nginx/conf.d
+
 EXPOSE 3000
 
-# Command to serve the build directory
-CMD ["serve", "-s", "build"]
+CMD ["nginx", "-g", "daemon off;"]
+
+
+
+
+
