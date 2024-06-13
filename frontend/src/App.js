@@ -6,7 +6,7 @@ function App() {
   const [newTodo, setNewTodo] = useState('');
 
   useEffect(() => {
-    axios.get('https://todo-backend.internal.jollyground-88366a8f.centralindia.azurecontainerapps.io')
+    axios.get('https://todo-backend.jollyground-88366a8f.centralindia.azurecontainerapps.io/api/todos')
       .then(response => {
         setTodos(response.data);
       });
@@ -14,7 +14,7 @@ function App() {
 
   const addTodo = () => {
     const todo = { text: newTodo };
-    axios.post('https://todo-backend.internal.jollyground-88366a8f.centralindia.azurecontainerapps.io', todo)
+    axios.post('https://todo-backend.jollyground-88366a8f.centralindia.azurecontainerapps.io/api/todos', todo)
       .then(response => {
         setTodos([...todos, response.data]);
         setNewTodo('');
