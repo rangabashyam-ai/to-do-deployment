@@ -1,19 +1,13 @@
-# Use an official Node runtime as a parent image
+# Dockerfile for frontend
 FROM node:14 AS build
 
-# Set the working directory
-WORKDIR /app
+WORKDIR /usr/src/app
 
-# Copy the package.json and package-lock.json
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
 COPY . .
 
-# Build the app for production
 RUN npm run build
 
 FROM nginx:alpine
@@ -29,8 +23,3 @@ COPY nginx.conf /etc/nginx/conf.d
 EXPOSE 3000
 
 CMD ["nginx", "-g", "daemon off;"]
-
-
-
-
-
