@@ -8,6 +8,10 @@ app.use(express.json());
 
 let todos = [];
 
+app.get('/', (req, res) => {
+  res.send('Welcome to the To-Do API!');
+});
+
 app.get('/api/todos', (req, res) => {
   res.json(todos);
 });
