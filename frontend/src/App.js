@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <h1>Ranga APP</h1>
+      <h1>Yash APP</h1>
       <ul>
         {todos.map((todo, index) => (
           <li key={index}>{todo.text}</li>
