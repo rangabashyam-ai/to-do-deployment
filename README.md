@@ -144,3 +144,18 @@
     - Deletes the table structure and all its data
     - Cannot be rolled back
     - Removes all associated indexes, constraints, and triggers
+   
+
+
+
+
+## CPU vs GPU Comparison
+
+| Feature                        | CPU                                           | GPU                                            |
+| ------------------------------ | --------------------------------------------- | ---------------------------------------------- |
+| **Type**                       | Host                                           | Device                                          |
+| **Code Execution**             | Host code execution                            | Device code execution                           |
+| **Task Suitability**           | Control-intensive tasks                        | Computation-intensive tasks                     |
+| **Data Size Handling**         | Small data size                                | Huge amount of data                             |
+| **Parallelism Level**          | Low level parallelism                          | Very high level parallelism                     |
+
