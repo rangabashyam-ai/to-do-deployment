@@ -195,4 +195,4 @@ Here are the abbreviations expanded and explained in concise points:
    - ACE could also refer to other components related to GPU acceleration in specific contexts.
   
 5. **Infinity Fabric:**
-6. Infinity Fabric in AMD GPUs is a high-speed interconnect architecture that links various components within the GPU, enabling efficient data transfer and communication across cores, memory, and other hardware blocks.
+  - Infinity Fabric in AMD GPUs is a high-speed interconnect architecture that links various components within the GPU, enabling efficient data transfer and communication across cores, memory, and other hardware blocks.
