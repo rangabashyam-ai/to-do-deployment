@@ -201,6 +201,7 @@ Here are the abbreviations expanded and explained in concise points:
 Here’s a simplified explanation of L1, L2, and L3 caches in a GPU:
 
 - **L1 Cache**:
+  - It is the primary cache.
   - The smallest and fastest cache level, located closest to the GPU cores.
   - It stores data that is frequently accessed by individual cores to reduce latency and improve performance.
 
