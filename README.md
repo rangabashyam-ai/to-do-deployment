@@ -174,3 +174,22 @@
 | **AI/ML Acceleration**      | Specialized for AI and machine learning tasks                 | Focused on gaming and graphics rendering, limited AI support  |
 | **Market**                  | Enterprise and data centers                                   | Consumer and gaming markets                                  |
 
+
+
+Here are the abbreviations expanded and explained in concise points:
+
+1. **XGMI (AMD XGMI - eXtended GPU Memory Interconnect):**
+   - A high-speed interconnect that links multiple GPU cards into a unified memory space.
+   - Organized by a collective hive ID and individual node IDs, both of which are 64-bit numbers.
+
+2. **DMA (Direct Memory Access):**
+   - A mechanism that provides a direct path between storage and GPU memory.
+   - It bypasses the CPU by allowing data to move directly between storage and GPU memory, avoiding extra copying through the CPU's memory.
+
+3. **HWS (Hardware Scheduler):**
+   - A feature in AMD GPUs that schedules graphics and compute jobs to the hardware dispatch blocks.
+   - Added in GCN 3, it virtualizes queues and handles scheduling, freeing the host driver from bookkeeping, and allows more compute tasks to be in flight.
+
+4. **ACE (Accelerated Computational Engine):**
+   - A GPU-enabled framework that simplifies the creation of GPU-capable applications.
+   - ACE could also refer to other components related to GPU acceleration in specific contexts.
