@@ -196,3 +196,18 @@ Here are the abbreviations expanded and explained in concise points:
   
 5. **Infinity Fabric:**
   - Infinity Fabric in AMD GPUs is a high-speed interconnect architecture that links various components within the GPU, enabling efficient data transfer and communication across cores, memory, and other hardware blocks.
+
+
+Here’s a simplified explanation of L1, L2, and L3 caches in a GPU:
+
+- **L1 Cache**:
+  - The smallest and fastest cache level, located closest to the GPU cores.
+  - It stores data that is frequently accessed by individual cores to reduce latency and improve performance.
+
+- **L2 Cache**:
+  - Larger than L1 and shared among multiple cores, providing a middle ground in speed and size.
+  - It helps in reducing memory access time by storing data that might not fit in L1 but is still frequently used.
+
+- **L3 Cache**:
+  - The largest cache level, shared across the entire GPU and slower compared to L1 and L2.
+  - It acts as a backup storage for data that doesn't fit in L1 or L2, improving overall access speed to main memory.
