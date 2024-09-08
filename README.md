@@ -159,3 +159,18 @@
 | **Data Size Handling**         | Small data size                                | Huge amount of data                             |
 | **Parallelism Level**          | Low level parallelism                          | Very high level parallelism                     |
 
+
+
+# GPU Architectures: CDNA vs RDNA
+
+| Feature                    | **CDNA (Compute DNA)**                                          | **RDNA (Radeon DNA)**                                        |
+|-----------------------------|----------------------------------------------------------------|--------------------------------------------------------------|
+| **Primary Focus**           | High-performance compute tasks, data centers                   | Gaming, graphics, visual rendering                           |
+| **Target Applications**     | Machine learning, scientific computing, AI workloads          | Gaming, visual applications, consumer graphics               |
+| **Display Output**          | No display output support                                     | Full display output support                                  |
+| **Power Efficiency**        | Optimized for compute workloads, power-efficient in data centers| Optimized for gaming performance and power efficiency         |
+| **Memory Architecture**     | High-bandwidth memory (HBM)                                    | GDDR memory optimized for graphics workloads                 |
+| **Scalability**             | Designed for multi-GPU scaling in compute clusters             | Single GPU performance scaling for gaming                    |
+| **AI/ML Acceleration**      | Specialized for AI and machine learning tasks                 | Focused on gaming and graphics rendering, limited AI support  |
+| **Market**                  | Enterprise and data centers                                   | Consumer and gaming markets                                  |
+
